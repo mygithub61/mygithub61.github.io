@@ -4,7 +4,7 @@
             var num1 = document.getElementById("numFirst").value;
             var num2 = document.getElementById("numSecond").value;
             var numAnswer = parseInt(num1) + parseInt(num2);
-            document.getElementById("NumAnswer").value = numAnswer.toString();
+            document.getElementById("numAnswer").innerHTML = numAnswer;
         }
     </script>
     <b>Hello World</b>
@@ -15,7 +15,7 @@
             <td><b> + </b></td>
             <td><input type="number" name="numSecond"></td>
             <td><button type="button" onclick="mathFunctions()">=</button></td>
-            <td><input type="number" name='NumAnswer' size='20'></td>
+            <td><p id="numAnswer"></p></td>
         </tr>
         </table>
         

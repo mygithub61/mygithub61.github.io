@@ -13,9 +13,15 @@
                 case '-':
                     numAnswer = parseInt(num1) - parseInt(num2);
                     break;
+                case 'x':
+                    numAnswer = parseInt(num1) * parseInt(num2);
+                    break;
+                case '/':
+                    numAnswer = parseFloat(num1) / parseFloat(num2);
+                    break;
                 default:
             }
-            document.getElementById("numAnswer").innerHTML = numAnswer;
+            document.getElementById("numAnswer").innerHTML = numAnswer.toString();
         }
     </script>
     <b>Hello World</b>
@@ -25,7 +31,8 @@
             <td><input type="number" id="numFirst" size='15'> </td>
             <td><input type="radio" id="plus" name="operators" value="+" checked>+<br>
                 <input type="radio" id="minus" name="operators" value="-">-<br>
-                <input type="radio" id="mulitply" name="operators" value="*">*</td>
+                <input type="radio" id="mulitply" name="operators" value="x">x<br>
+                <input type="radio" id="mulitply" name="operators" value="/">/</td>
             <td><input type="number" id="numSecond"></td>
             <td><button type="button" onclick="mathFunctions()">=</button></td>
             <td><p id="numAnswer"></p></td>

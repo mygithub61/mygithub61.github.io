@@ -1,16 +1,21 @@
 <html>
     <javascript>
-
+        function mathFunctions(){
+            var num1 = document.getElementById("numFirst").value;
+            var num2 = document.getElementById("numSecond").value;
+            var numAnswer = num1 + num2;
+            document.getElementById("NumAnswer").value = numAnswer;
+        }
     </javascript>
     <b>Hello World</b>
     <form name="frmFirst">
         <table>
         <tr>
-            <td><input type="number" name="numFirst"> </td>
+            <td><input type="number" name="numFirst" size='15'> </td>
             <td><b> + </b></td>
             <td><input type="number" name="numSecond"></td>
-            <td><button type="button">=</button></td>
-            <td><input type="number" name='NumAnswer' size='30'></td>
+            <td><button type="button" onclick="mathFunctions()">=</button></td>
+            <td><input type="number" name='NumAnswer' size='20'></td>
         </tr>
         </table>
         

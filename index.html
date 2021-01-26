@@ -3,7 +3,7 @@
         function mathFunctions(){
             var num1 = document.getElementById("numFirst").value;
             var num2 = document.getElementById("numSecond").value;
-            alert($('input[name=operators]:checked').val());
+            alert(document.querySelector('input[name="operators"]:checked').value);
             var numAnswer = parseInt(num1) + parseInt(num2);
             document.getElementById("numAnswer").innerHTML = numAnswer;
         }

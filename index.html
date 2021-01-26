@@ -3,6 +3,7 @@
         function mathFunctions(){
             var num1 = document.getElementById("numFirst").value;
             var num2 = document.getElementById("numSecond").value;
+            alert($('input[name=operators]:checked').val());
             var numAnswer = parseInt(num1) + parseInt(num2);
             document.getElementById("numAnswer").innerHTML = numAnswer;
         }
@@ -12,7 +13,9 @@
         <table>
         <tr>
             <td><input type="number" id="numFirst" size='15'> </td>
-            <td><b> + </b></td>
+            <td><input type="radio" id="plus" name="operators" value="+" checked><br>
+                <input type="radio" id="minus" name="operators" value="-"><br>
+                <input type="radio" id="mulitply" name="operators" value="*"></td>
             <td><input type="number" id="numSecond"></td>
             <td><button type="button" onclick="mathFunctions()">=</button></td>
             <td><p id="numAnswer"></p></td>

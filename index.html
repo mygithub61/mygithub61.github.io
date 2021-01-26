@@ -4,7 +4,17 @@
             var num1 = document.getElementById("numFirst").value;
             var num2 = document.getElementById("numSecond").value;
             alert(document.querySelector('input[name="operators"]:checked').value);
-            var numAnswer = parseInt(num1) + parseInt(num2);
+            var operator = document.querySelector('input[name="operators"]:checked').value;
+            var numAnswer = 0;
+            switch(operator) {
+                case '+':
+                    numAnswer = parseInt(num1) + parseInt(num2);
+                    break;
+                case '-':
+                    numAnswer = parseInt(num1) - parseInt(num2);
+                    break;
+                default:
+            }
             document.getElementById("numAnswer").innerHTML = numAnswer;
         }
     </script>

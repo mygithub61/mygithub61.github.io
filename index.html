@@ -28,11 +28,11 @@
         var myVar = setInterval(myTimer, 1000);
         function myTimer() {
             var now = new Date();
-            document.getElementById("timer").innerHTML = now.toLocaleTimeString();
+            document.getElementById("timer").innerHTML = "Current Time: " + now.toLocaleTimeString();
         }
     </script>
         <h1>Hello World!</h1>
-        <b>Current Time: </b><p id="timer"></p>
+        <p id="timer"></p>
         <form name="frmFirst">
             <table>
             <tr>
